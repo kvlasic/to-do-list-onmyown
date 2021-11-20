@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    max-width: 1280px;
+    height: 93.8vh;
+    margin: auto;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Lists styling */
+
+#lists-container {
+    flex-grow: 1;
+}
+
+
+/* Tasks styling */
+
+#todos-container {
+    flex-grow: 4;
+}
+
+
+/* List items and form */
+
+li {
+    list-style: circle;
+    font-size: 16pt;
+}
+
+.task {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/* X and ✓ */
+
+button {
+    background: none;
+    border: none;
+}
+
+
+/* Input element styling */
+
+.textInput,
+.textInput:focus-visible {
+    outline: none;
+    border: none;
+    border-bottom: 1px white solid;
+    background: none;
+    color: white;
+    width: 90%;
+    font-size: 15pt;
+}
+
+.submitInput {
+    border: none;
+    background: none;
+    color: inherit;
+    font-weight: 900;
+    font-size: 16pt;
+}

@@ -11,13 +11,24 @@
 </head>
 
 <body>
-    <h2>Your lists</h2>
-    <ul id="lists">
-        <form>
-            <input type="text"></input>
-            <input type="submit">+<input>
+    <div id="lists-container">
+        <h2>Your lists</h2>
+        <ul id="lists">
+        </ul>
+        <form onsubmit="addList(event)" autocomplete="off">
+            <input type="submit" value="+" class="submitInput"></input>
+            <input type="text" id="listInput" class="textInput" required></input>
         </form>
-    </ul>
+    </div>
+    <div id="todos-container">
+        <h2 id="listTitle">List Title</h2>
+        <ul id="todos">
+        </ul>
+        <form onsubmit="addToDo(event)" autocomplete="off">
+            <input type="submit" value="+" class="submitInput"></input>
+            <input type="text" id="todosInput" class="textInput" required></input>
+        </form>
+    </div>
 </body>
 
 </html>
